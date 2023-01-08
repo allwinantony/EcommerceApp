@@ -1,0 +1,26 @@
+Create a folder for backend
+In cmd type " npm init " : for package.json
+In cmd type " npm i express " for node modules
+Create a index.js file
+    import express inside index.js
+    using express create an app
+    setup port number
+    use json parser for server application
+
+        then run index.js using code " nodoemon index.js " in cmd
+
+To connect backend to frontend 
+    install cors - " npm i cors "
+    import cors
+    using cors specify origin to the server - (ie, specify the frontend origin. this step is known as integration)
+    get api - here for ecommerce app search in web fakestoreapi/products
+    create db.json file and copy paste all the data from api in it
+    create a dataBase using mongoDb, then import all the data from db.json
+    install mongoose to establish connection between server and mongoDb dataBase - " npm i mongoose " 
+    create a folder called services, inside this create 2 files dataService.js and db.js
+        In db.js - import mongoose to establish connection between server and mongoDb dataBase
+        Define connection string - (copy code from mongoDb compass and add the dataBase name at the end of string)
+        inside db.js create model to store all products as the same name as collection inside mongodb, but make first letter in caps
+        resolve API requests in index.js
+
+Connection flow - (mongoDb to db.js, db.js to dataService.js, dataService to index.js) ie; mongoDb to 

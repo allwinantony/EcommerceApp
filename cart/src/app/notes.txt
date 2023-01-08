@@ -1,0 +1,24 @@
+Frontend  - Ecommerce
+
+create angular project - ng new project_name
+run angular project - ng s -o
+add 
+Lazy loading - its a process of loading components and modules
+                - it improves applicatoin load time speed
+ng g m products --route products --module app.module
+create a component with lazy loaded
+in the products module
+    >all-products - ng g c products/all-products
+    >Cart - ng g c products/cart
+    >wish-list - ng g c products/wish-list
+
+
+Designing of the components
+
+create angular services for the api calling
+    -ng g s products/api
+import HttpClientModule in products module 
+
+Integration
+
+Designing of wishlist and cart
